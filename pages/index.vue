@@ -1,0 +1,131 @@
+<template>
+  <div class="py-10">
+    <main>
+      <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <div class="px-4 py-8 sm:px-0">
+          <div class="lg:flex">
+            <!-- col 8 -->
+            <div class="w-full lg:w-8/12">
+              <div class="grid gap-5 grid-cols-12">
+                <div
+                  class="col-span-12 md:col-span-8 rounded-md overflow-hidden "
+                >
+                  <div class="h-full">
+                    <img
+                      src="https://asset1.dbcnews.tv/storage/images/7ca62e04-49fa-4de5-87f5-9488e87e49bc.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <div class="col-span-12 md:col-span-4 ">
+                  <div class="grid gap-5 grid-cols-2 md:grid-cols-none">
+                    <div
+                      class="col-span-1 rounded-md overflow-hidden"
+                      v-for="n in 2"
+                      :key="n"
+                    >
+                      <img
+                        src="https://asset1.dbcnews.tv/storage/images/7ca62e04-49fa-4de5-87f5-9488e87e49bc.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-span-6 md:col-span-4  bg-indigo-600 shadow rounded-lg overflow-hidden"
+                  v-for="n in 6"
+                  :key="n"
+                >
+                  <img
+                    src="https://asset1.dbcnews.tv/storage/images/7ca62e04-49fa-4de5-87f5-9488e87e49bc.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- col 4  -->
+            <div class="w-full lg:w-4/12 mt-5 lg:mt-0 lg:pl-5">
+              <div>
+                <ul class="w-full flex">
+                  <li
+                    class="py-3 w-full px-5 flex justify-center text-base font-bold text-gray-700"
+                    :class="{ 'bg-pink-500 text-white rounded-md': active }"
+                    @click.prevent="active = true"
+                  >
+                    <a href="">সর্বশেষ</a>
+                  </li>
+                  <li
+                    class=" py-3 w-full px-5 flex justify-center text-base font-bold text-gray-700"
+                    :class="{ 'bg-pink-500 text-white rounded-md': !active }"
+                    @click.prevent="active = false"
+                  >
+                    <a href="">জনপ্রিয়</a>
+                  </li>
+                </ul>
+              </div>
+              <div v-show="active">
+                <div
+                  class="first:py-3 rounded-md overflow-hidden py-3 border-b "
+                  v-for="n in 7"
+                  :key="n"
+                >
+                  <div class="grid grid-cols-12 gap-5">
+                    <div
+                      class="col-span-4 sm:col-span-2 lg:col-span-4 rounded-md overflow-hidden"
+                    >
+                      <img
+                        src="https://asset1.dbcnews.tv/storage/images/7ca62e04-49fa-4de5-87f5-9488e87e49bc.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="col-span-8 sm:col-span-10 lg:col-span-8 text-base font-semibold text-gray-700"
+                    >
+                      বিএনপির রাজনীতি মিথ্যা ও অসত্যের ওপর দাঁড়িয়ে আছে:
+                      তথ্যমন্ত্রী
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div v-show="!active">
+                <div
+                  class="first:py-3 rounded-md overflow-hidden py-3 border-b "
+                  v-for="n in 7"
+                  :key="n"
+                >
+                  <div class="grid grid-cols-12 gap-5">
+                    <div
+                      class="col-span-4 sm:col-span-2 lg:col-span-4 rounded-md overflow-hidden"
+                    >
+                      <img
+                        src="https://asset1.dbcnews.tv/storage/images/7ca62e04-49fa-4de5-87f5-9488e87e49bc.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div
+                      class="col-span-8 sm:col-span-10 lg:col-span-8 text-base font-semibold text-gray-700"
+                    >
+                      কাবুলে বোমা হামলায় ১৩ মার্কিন সেনাসহ নিহত ৯০
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      open: false,
+      active: true
+    };
+  }
+};
+</script>
