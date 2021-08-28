@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.title {
+    @apply text-base text-gray-700
+}
+
+.title a:hover {
+    @apply text-base text-brand-700
+}
+
+.title-white {
+    @apply font-semibold text-white
+}
+
+.detail {
+    @apply text-sm text-gray-500
+}
+
+.detail-white {
+    @apply text-sm text-white
+}
