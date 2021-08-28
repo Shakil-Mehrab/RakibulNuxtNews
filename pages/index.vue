@@ -21,9 +21,7 @@
                       <div
                         class="bg-gradient-to-t from-brand-700 to-transparent bg-opacity-50 absolute bottom-0   w-full p-4"
                       >
-                        <h3
-                          class="text-white text-base text-center leading-tight sm:font-semibold md:text-xl"
-                        >
+                        <h3 class="title-white sm:font-semibold md:text-xl">
                           বিএনপির রাজনীতি মিথ্যা ও অসত্যের ওপর দাঁড়িয়ে আছে:
                           তথ্যমন্ত্রী দাঁড়িয়ে আছে:
                         </h3>
@@ -49,9 +47,7 @@
                         <div
                           class="bg-gradient-to-t from-brand-700 to-transparent bg-opacity-50 absolute bottom-0   w-full p-2 "
                         >
-                          <h3
-                            class="truncate text-white text-base text-center md:font-semibold leading-tight "
-                          >
+                          <h3 class="title-white  md:font-semibold truncate">
                             বিএনপির রাজনীতি মিথ্যা ও অসত্যের ওপর দাঁড়িয়ে আছে:
                             তথ্যমন্ত্রী দাঁড়িয়ে আছে:
                           </h3>

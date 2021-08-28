@@ -2,15 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 .title {
-    @apply text-base text-gray-700
+    @apply text-base text-gray-700 transition duration-500 ease-in-out
 }
 
-.title a:hover {
-    @apply text-base text-brand-700
+.title:hover {
+    @apply text-brand-700
 }
 
 .title-white {
-    @apply font-semibold text-white
+    @apply text-white text-base text-center leading-tight transition duration-500 ease-in-out
+}
+
+.title-white:hover {
+    @apply text-brand-700
 }
 
 .detail {
