@@ -12,71 +12,18 @@
               <div
                 class="col-span-12 overflow-hidden rounded-md md:col-span-8 "
               >
-                <div class="relative h-full">
-                  <a href="">
-                    <div>
-                      <img
-                        src="https://asset1.dbcnews.tv/storage/images/9076c248-4dcf-4bd6-8160-cffca94f8aaa.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div
-                      class="absolute bottom-0 w-full p-4 bg-opacity-50 bg-gradient-to-t from-brand-700 to-transparent"
-                    >
-                      <h3 class="title-white sm:font-semibold md:text-xl">
-                        বিএনপির রাজনীতি মিথ্যা ও অসত্যের ওপর দাঁড়িয়ে আছে:
-                        তথ্যমন্ত্রী দাঁড়িয়ে আছে:
-                      </h3>
-                    </div>
-                  </a>
-                </div>
+                <Top />
               </div>
 
               <div class="col-span-12 md:col-span-4 ">
-                <div class="grid grid-cols-2 gap-5 md:grid-cols-none">
-                  <div
-                    class="relative col-span-1 overflow-hidden rounded-md"
-                    v-for="n in 2"
-                    :key="n"
-                  >
-                    <a href="">
-                      <div>
-                        <img
-                          src="https://asset1.dbcnews.tv/storage/images/7ca62e04-49fa-4de5-87f5-9488e87e49bc.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <div
-                        class="absolute bottom-0 w-full p-2 bg-opacity-50 bg-gradient-to-t from-brand-700 to-transparent "
-                      >
-                        <h3 class="truncate title-white md:font-semibold">
-                          বিএনপির রাজনীতি মিথ্যা ও অসত্যের ওপর দাঁড়িয়ে আছে:
-                          তথ্যমন্ত্রী দাঁড়িয়ে আছে:
-                        </h3>
-                      </div>
-                    </a>
-                  </div>
-                </div>
+                <TopMiddle />
               </div>
               <div
                 class="col-span-6 shadow md:col-span-4"
                 v-for="n in 6"
                 :key="n"
               >
-                <a href="">
-                  <div class="overflow-hidden rounded-lg">
-                    <img
-                      src="https://asset1.dbcnews.tv/storage/images/7ca62e04-49fa-4de5-87f5-9488e87e49bc.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-2">
-                    <h3 class="title sm:font-semibold">
-                      বিএনপির রাজনীতি মিথ্যা ও অসত্যের ওপর দাঁড়িয়ে আছে:
-                      তথ্যমন্ত্রী দাঁড়িয়ে আছে:
-                    </h3>
-                  </div>
-                </a>
+                <TopLower />
               </div>
             </div>
           </div>
@@ -101,56 +48,10 @@
               </ul>
             </div>
             <div v-show="active">
-              <div
-                class="py-3 overflow-hidden border-b rounded-md first:py-3 "
-                v-for="n in 7"
-                :key="n"
-              >
-                <div class="">
-                  <a href="" class="grid grid-cols-12 gap-5">
-                    <div
-                      class="col-span-4 overflow-hidden rounded-md sm:col-span-2 lg:col-span-4"
-                    >
-                      <img
-                        src="https://www.ntvbd.com/sites/default/files/styles/medium_2/public/images/2021/08/29/240837521_254.jpg?itok=wOSHXif6&timestamp=1630249368"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-span-8 sm:col-span-10 lg:col-span-8 title ">
-                      <h3 class="title sm:font-semibold">
-                        বিএনপির রাজনীতি মিথ্যা ও অসত্যের ওপর দাঁড়িয়ে আছে:
-                        তথ্যমন্ত্রী
-                      </h3>
-                    </div>
-                  </a>
-                </div>
-              </div>
+              <Aside />
             </div>
             <div v-show="!active">
-              <div
-                class="py-3 overflow-hidden border-b rounded-md first:py-3 "
-                v-for="n in 7"
-                :key="n"
-              >
-                <div class="">
-                  <a href="" class="grid grid-cols-12 gap-5">
-                    <div
-                      class="col-span-4 overflow-hidden rounded-md sm:col-span-2 lg:col-span-4"
-                    >
-                      <img
-                        src="https://asset1.dbcnews.tv/storage/images/7ca62e04-49fa-4de5-87f5-9488e87e49bc.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <div class="col-span-8 sm:col-span-10 lg:col-span-8 title ">
-                      <h3 class="title sm:font-semibold">
-                        বিএনপির রাজনীতি মিথ্যা ও অসত্যের ওপর দাঁড়িয়ে আছে:
-                        তথ্যমন্ত্রী
-                      </h3>
-                    </div>
-                  </a>
-                </div>
-              </div>
+              <Aside />
             </div>
           </div>
         </div>
@@ -161,15 +62,23 @@
 
 <script>
 import Marque from "@/components/marque/Marque";
+import Aside from "@/components/sidebar/Aside";
+import Top from "@/components/index/topNews/Top";
+import TopMiddle from "@/components/index/topNews/middle/TopMiddle";
+import TopLower from "@/components/index/topNews/TopLower";
+
 export default {
   data() {
     return {
-      open: false,
       active: true
     };
   },
   components: {
-    Marque
+    Marque,
+    Aside,
+    Top,
+    TopMiddle,
+    TopLower
   }
 };
 </script>
