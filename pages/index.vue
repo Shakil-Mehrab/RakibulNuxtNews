@@ -48,11 +48,96 @@
               </ul>
             </div>
             <div v-show="active">
-              <Aside />
+              <Aside :asides="7" />
             </div>
             <div v-show="!active">
-              <Aside />
+              <Aside :asides="7" />
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- national  -->
+    <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="px-4 py-2 sm:px-0">
+        <div class="my-5">
+          <Divider title="বাংলাদেশ" />
+        </div>
+        <div class="grid grid-cols-12 gap-5">
+          <div
+            class="col-span-6 shadow md:col-span-3 lg:col-span-2"
+            v-for="n in 12"
+            :key="n"
+          >
+            <TopLower />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- video  -->
+    <div class="bg-brand-800">
+      <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="px-4 py-2 sm:px-0">
+          <div class="my-5">
+            <div class="relative">
+              <div
+                class="absolute inset-0 flex items-center"
+                aria-hidden="true"
+              >
+                <div class="w-full border-t-2 border-white"></div>
+              </div>
+              <div class="relative flex justify-start">
+                <span class="pr-2 text-2xl font-bold text-white bg-brand-800">
+                  ভিডিও
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-12 gap-5">
+            <div
+              class="col-span-12 shadow md:col-span-4 2md:col-span-4 lg:col-span-3"
+              v-for="n in 8"
+              :key="n"
+            >
+              <Video />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- international  -->
+    <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="px-4 py-2 sm:px-0">
+        <div class="grid grid-cols-12 gap-6">
+          <div
+            class="col-span-12 shadow md:col-span-6 lg:col-span-4"
+            v-for="n in 3"
+            :key="n"
+          >
+            <div class="my-5">
+              <Divider title="আন্তর্জাতিক" />
+            </div>
+            <TopLower :detail="true" />
+            <div>
+              <Aside :asides="3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sports  -->
+    <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="px-4 py-2 sm:px-0">
+        <div class="my-5">
+          <Divider title="খেলাধুলা" />
+        </div>
+        <div class="grid grid-cols-12 gap-5">
+          <div
+            class="col-span-6 shadow md:col-span-3 lg:col-span-2"
+            v-for="n in 12"
+            :key="n"
+          >
+            <TopLower />
           </div>
         </div>
       </div>
@@ -66,6 +151,8 @@ import Aside from "@/components/sidebar/Aside";
 import Top from "@/components/index/topNews/Top";
 import TopMiddle from "@/components/index/topNews/middle/TopMiddle";
 import TopLower from "@/components/index/topNews/TopLower";
+import Divider from "@/components/divider/Divider";
+import Video from "@/components/video/Video";
 
 export default {
   data() {
@@ -78,7 +165,9 @@ export default {
     Aside,
     Top,
     TopMiddle,
-    TopLower
+    TopLower,
+    Divider,
+    Video
   }
 };
 </script>

@@ -48,7 +48,7 @@
               v-for="n in 4"
               :key="n"
             >
-              <i class="fab fa-facebook-square"></i>
+              <a href=""><i class="fab fa-facebook-square"></i></a>
             </div>
           </div>
         </div>

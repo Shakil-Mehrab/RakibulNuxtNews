@@ -2,7 +2,7 @@
   <div>
     <div
       class="py-3 overflow-hidden border-b rounded-md first:py-3 "
-      v-for="n in 7"
+      v-for="n in asides"
       :key="n"
     >
       <div class="">
@@ -25,3 +25,13 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  props: {
+    asides: {
+      required: true,
+      type: Number
+    }
+  }
+};
+</script>

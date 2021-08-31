@@ -6,7 +6,7 @@
 </template>
 <script>
 import TopHeader from "@/layouts/partials/header/TopHeader";
-import LowerHeader from "@/layouts/partials/header/LowerHeader/LowerHeader";
+import LowerHeader from "@/layouts/partials/header/lowerHeader/LowerHeader";
 
 export default {
   data() {
