@@ -1,15 +1,12 @@
 <template>
-  <div>
-    <a href="#" class="">
-      Dashboard
-    </a>
+  <div class="">
+    <a href="#" class=""> Dashboard </a>
     <div
-      class="absolute right-0 z-50 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg top-16 ring-1 ring-black ring-opacity-5 focus:outline-none "
+      class="absolute right-0 z-50 invisible w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg  top-16 ring-1 ring-black ring-opacity-5 focus:outline-none group-hover:visible"
       role="menu"
       aria-orientation="vertical"
       aria-labelledby="user-menu-button"
       tabindex="-1"
-      v-if="n == item"
     >
       <!-- Active: "bg-gray-100", Not Active: "" -->
       <a
@@ -44,12 +41,12 @@ export default {
   props: {
     n: {
       required: true,
-      type: Number
+      type: Number,
     },
     item: {
       required: true,
-      type: Number
-    }
-  }
+      type: Number,
+    },
+  },
 };
 </script>

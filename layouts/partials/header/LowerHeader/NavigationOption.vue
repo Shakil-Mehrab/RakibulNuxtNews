@@ -11,10 +11,8 @@
       <div
         v-for="n in 6"
         :key="n"
-        class="relative inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 "
-        :class="n == item ? 'border-indigo-500' : ''"
+        class="relative inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2  hover:border-indigo-500 group"
         aria-current="page"
-        @click.prevent="ItemNo(n)"
       >
         <NavigationItem :n="n" :item="item" />
       </div>
@@ -26,16 +24,11 @@ import NavigationItem from "@/layouts/partials/header/LowerHeader/NavigationItem
 export default {
   data() {
     return {
-      item: 0
+      item: 0,
     };
   },
   components: {
-    NavigationItem
+    NavigationItem,
   },
-  methods: {
-    ItemNo(n) {
-      this.item = n;
-    }
-  }
 };
 </script>
