@@ -8,15 +8,34 @@
       />
     </div>
     <div class="hidden 2md:-my-px sm:ml-6 2md:flex 2md:space-x-8">
-      <a
-        v-for="n in 8"
+      <div
+        v-for="n in 6"
         :key="n"
-        href="#"
-        class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 border-indigo-500"
+        class="relative inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 border-b-2 "
+        :class="n == item ? 'border-indigo-500' : ''"
         aria-current="page"
+        @click.prevent="ItemNo(n)"
       >
-        Dashboard
-      </a>
+        <NavigationItem :n="n" :item="item" />
+      </div>
     </div>
   </div>
 </template>
+<script>
+import NavigationItem from "@/layouts/partials/header/LowerHeader/NavigationItem";
+export default {
+  data() {
+    return {
+      item: 0
+    };
+  },
+  components: {
+    NavigationItem
+  },
+  methods: {
+    ItemNo(n) {
+      this.item = n;
+    }
+  }
+};
+</script>
