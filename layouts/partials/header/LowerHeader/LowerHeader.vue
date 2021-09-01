@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-white border-b border-gray-200">
+  <nav class="border-b border-gray-200 bg-brand-800">
     <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <div class="flex">
@@ -97,12 +97,11 @@
         </div>
       </div>
     </div>
-    <div class="2md:hidden" id="mobile-menu" v-show="mobile_menu">
-      <div class="pt-4 pb-3 border-t border-gray-200">
-        <div class="flex items-center w-full px-4">
-          <Search />
-        </div>
-      </div>
+    <div
+      class="absolute z-50 w-full transition ease-in-out bg-gray-300 duration-2000 bg-opacity-80 2md:hidden"
+      id="mobile-menu"
+      :class="mobile_menu ? 'ml-0 ' : 'hide-left'"
+    >
       <MobileMenu />
     </div>
   </nav>

@@ -17,6 +17,9 @@ module.exports = {
                     700: '#01323D',
                     800: '#339999'
                 },
+                margin: {
+                    '66': '-66rem'
+                }
             }
         },
         screens: {
