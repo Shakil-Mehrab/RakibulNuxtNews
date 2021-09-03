@@ -6,7 +6,10 @@
       :key="n"
     >
       <div class="">
-        <a href="" class="grid grid-cols-12 gap-5">
+        <nuxt-link
+          :to="{ name: 'news-slug' }"
+          class="grid grid-cols-12 gap-2 md:gap-6"
+        >
           <div
             class="col-span-4 overflow-hidden rounded-md sm:col-span-2 lg:col-span-4"
           >
@@ -20,7 +23,7 @@
               বিএনপির রাজনীতি মিথ্যা ও অসত্যের ওপর দাঁড়িয়ে আছে: তথ্যমন্ত্রী
             </h3>
           </div>
-        </a>
+        </nuxt-link>
       </div>
     </div>
   </div>

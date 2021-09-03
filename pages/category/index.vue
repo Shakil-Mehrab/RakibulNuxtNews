@@ -1,5 +1,5 @@
 <template>
   <div>
-    details
+    categoryasi
   </div>
 </template>

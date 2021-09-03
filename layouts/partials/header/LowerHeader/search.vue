@@ -1,7 +1,7 @@
 <template>
-  <button type="button" class="w-full p-1 text-gray-70">
+  <button type="button" class="w-full pl-1 text-gray-70">
     <div>
-      <div class="relative mt-1 rounded-md shadow-sm">
+      <div class="relative mt-3 rounded-md shadow-sm">
         <input
           type="text"
           name="account-number"
@@ -10,7 +10,7 @@
           placeholder="Search ..."
         />
         <div
-          class="absolute inset-y-0 right-0 flex items-center px-1 text-white rounded-r-md bg-brand-800"
+          class="absolute inset-y-0 right-0 flex items-center px-1 text-white rounded-r-md bg-brand-600 2md:bg-brand-700"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

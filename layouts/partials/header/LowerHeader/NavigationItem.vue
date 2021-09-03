@@ -1,13 +1,14 @@
 <template>
-  <div class="">
+  <div class="nav-item">
     <a href="#" class=""> Dashboard </a>
     <div
-      class="absolute right-0 z-50 invisible w-48 py-1 origin-top-right bg-white rounded-md shadow-lg sub-cat-margin ring-1 ring-black ring-opacity-5 focus:outline-none group-hover:visible"
+      class="absolute right-0 z-50 invisible w-48 py-1 origin-top-right bg-white rounded-md sub-cat-margin group-hover:visible"
       role="menu"
       aria-orientation="vertical"
       aria-labelledby="user-menu-button"
       tabindex="-1"
     >
+      <div class="h-1.5 -mt-1 bg-brand-600"></div>
       <a
         href="#"
         class="block px-4 py-2 text-sm text-gray-700"

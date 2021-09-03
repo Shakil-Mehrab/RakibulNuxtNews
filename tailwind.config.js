@@ -14,8 +14,8 @@ module.exports = {
 
             colors: {
                 brand: {
-                    700: '#01323D',
-                    800: '#339999'
+                    600: '#339999',
+                    700: '#01323D'
                 },
                 margin: {
                     '66': '-66rem'
@@ -35,6 +35,7 @@ module.exports = {
         extend: {
             borderColor: ['responsive', 'hover', 'focus', 'active'],
             visibility: ['group-hover'],
+            margin: ['group-hover'],
         },
     },
     plugins: [],

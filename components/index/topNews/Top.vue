@@ -1,6 +1,6 @@
 <template>
   <div class="relative h-full">
-    <a href="">
+    <nuxt-link :to="{ name: 'category' }">
       <div>
         <img
           src="https://asset1.dbcnews.tv/storage/images/0db2f45a-2b9a-4464-96da-88cb9ea79a61.jpg"
@@ -15,6 +15,6 @@
           আছে:
         </h3>
       </div>
-    </a>
+    </nuxt-link>
   </div>
 </template>

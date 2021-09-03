@@ -6,7 +6,7 @@
 }
 
 .title:hover {
-    @apply text-brand-800
+    @apply text-brand-600
 }
 
 .title-white {

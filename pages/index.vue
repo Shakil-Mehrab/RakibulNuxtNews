@@ -8,7 +8,7 @@
         <div class="lg:flex">
           <!-- col 8 -->
           <div class="w-full lg:w-8/12">
-            <div class="grid grid-cols-12 gap-6">
+            <div class="grid grid-cols-12 gap-2 md:gap-6">
               <div class="col-span-12 overflow-hidden rounded-md md:col-span-8">
                 <Top />
               </div>
@@ -34,14 +34,14 @@
                   :class="{ 'bg-pink-500 text-white rounded-md': active }"
                   @click.prevent="active = true"
                 >
-                  <a href="">সর্বশেষ</a>
+                  <a href="#">সর্বশেষ</a>
                 </li>
                 <li
                   class="flex justify-center w-full px-5 py-3 text-base font-bold "
                   :class="{ 'bg-pink-500 text-white rounded-md': !active }"
                   @click.prevent="active = false"
                 >
-                  <a href="">জনপ্রিয়</a>
+                  <a href="#">জনপ্রিয়</a>
                 </li>
               </ul>
             </div>
@@ -58,10 +58,10 @@
     <!-- national  -->
     <div class="mx-auto mt-12 max-w-7xl sm:px-6 lg:px-8">
       <div class="px-4 py-2 sm:px-0">
-        <div class="pb-2 pl-2 mb-1 border-l-4 border-brand-800">
+        <div class="pb-2 pl-2 mb-1 border-l-4 border-brand-600">
           <Divider title="বাংলাদেশ" />
         </div>
-        <div class="grid grid-cols-12 gap-6">
+        <div class="grid grid-cols-12 gap-2 md:gap-6">
           <div
             class="col-span-6 shadow md:col-span-3 lg:col-span-2"
             v-for="n in 12"
@@ -73,7 +73,7 @@
       </div>
     </div>
     <!-- video  -->
-    <div class="mt-12 bg-brand-800">
+    <div class="mt-12 bg-brand-600">
       <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="px-4 py-2 sm:px-0">
           <div class="my-5">
@@ -85,7 +85,7 @@
                 <div class="w-full border-t-2 border-white"></div>
               </div>
               <div class="relative flex justify-start">
-                <span class="pr-2 text-2xl font-bold text-white bg-brand-800">
+                <span class="pr-2 text-2xl font-bold text-white bg-brand-600">
                   ভিডিও
                 </span>
               </div>
@@ -93,7 +93,7 @@
           </div>
           <div class="grid grid-cols-12 gap-6">
             <div
-              class="col-span-12 shadow  md:col-span-4 2md:col-span-4 lg:col-span-3"
+              class="col-span-12 shadow md:col-span-4 2md:col-span-4 lg:col-span-3"
               v-for="n in 8"
               :key="n"
             >
@@ -112,7 +112,7 @@
             v-for="n in 3"
             :key="n"
           >
-            <div class="pb-2 pl-2 mb-1 border-l-4 border-brand-800">
+            <div class="pb-2 pl-2 mb-1 border-l-4 border-brand-600">
               <Divider title="আন্তর্জাতিক" />
             </div>
             <TopLower :detail="true" />
@@ -126,10 +126,10 @@
     <!-- sports  -->
     <div class="mx-auto mt-12 max-w-7xl sm:px-6 lg:px-8">
       <div class="px-4 py-2 sm:px-0">
-        <div class="pb-2 pl-2 mb-1 border-l-4 border-brand-800">
+        <div class="pb-2 pl-2 mb-1 border-l-4 border-brand-600">
           <Divider title="খেলাধুলা" />
         </div>
-        <div class="grid grid-cols-12 gap-6">
+        <div class="grid grid-cols-12 gap-2 md:gap-6">
           <div
             class="col-span-6 shadow md:col-span-3 lg:col-span-2"
             v-for="n in 12"
@@ -143,10 +143,10 @@
     <!-- recreation  -->
     <div class="mx-auto mt-12 max-w-7xl sm:px-6 lg:px-8">
       <div class="px-4 py-2 sm:px-0">
-        <div class="pb-2 pl-2 mb-1 border-l-4 border-brand-800">
+        <div class="pb-2 pl-2 mb-1 border-l-4 border-brand-600">
           <Divider title="বিনোদন" />
         </div>
-        <div class="grid grid-cols-12 gap-6">
+        <div class="grid grid-cols-12 gap-2 md:gap-6">
           <div
             class="col-span-6 shadow md:col-span-3 lg:col-span-3"
             v-for="n in 12"
@@ -172,7 +172,7 @@ import Video from "@/components/video/Video";
 export default {
   data() {
     return {
-      active: true,
+      active: true
     };
   },
   components: {
@@ -182,7 +182,7 @@ export default {
     TopMiddle,
     TopLower,
     Divider,
-    Video,
-  },
+    Video
+  }
 };
 </script>
