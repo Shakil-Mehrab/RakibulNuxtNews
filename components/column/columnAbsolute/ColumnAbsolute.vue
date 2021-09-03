@@ -5,16 +5,16 @@
       v-for="n in 2"
       :key="n"
     >
-      <MiddleItem />
+      <ColumnAbsoluteItem />
     </div>
   </div>
 </template>
 <script>
-import MiddleItem from "@/components/index/topNews/middle/MiddleItem";
+import ColumnAbsoluteItem from "@/components/column/columnAbsolute/ColumnAbsoluteItem";
 
 export default {
   components: {
-    MiddleItem
+    ColumnAbsoluteItem
   }
 };
 </script>

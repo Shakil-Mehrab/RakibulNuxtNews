@@ -14,14 +14,14 @@
               </div>
 
               <div class="col-span-12 md:col-span-4">
-                <TopMiddle />
+                <ColumnAbsolute />
               </div>
               <div
                 class="col-span-6 shadow md:col-span-4"
                 v-for="n in 6"
                 :key="n"
               >
-                <TopLower />
+                <NewsItem />
               </div>
             </div>
           </div>
@@ -51,6 +51,10 @@
             <div v-show="!active">
               <Aside :asides="7" />
             </div>
+
+            <div class="my-3">
+              <Calender />
+            </div>
           </div>
         </div>
       </div>
@@ -67,7 +71,7 @@
             v-for="n in 12"
             :key="n"
           >
-            <TopLower />
+            <NewsItem />
           </div>
         </div>
       </div>
@@ -115,7 +119,7 @@
             <div class="pb-2 pl-2 mb-1 border-l-4 border-brand-600">
               <Divider title="আন্তর্জাতিক" />
             </div>
-            <TopLower :detail="true" />
+            <NewsItem :detail="true" />
             <div>
               <Aside :asides="3" />
             </div>
@@ -135,7 +139,7 @@
             v-for="n in 12"
             :key="n"
           >
-            <TopLower />
+            <NewsItem />
           </div>
         </div>
       </div>
@@ -152,7 +156,7 @@
             v-for="n in 12"
             :key="n"
           >
-            <TopLower />
+            <NewsItem />
           </div>
         </div>
       </div>
@@ -164,10 +168,11 @@
 import Marque from "@/components/marque/Marque";
 import Aside from "@/components/sidebar/Aside";
 import Top from "@/components/index/topNews/Top";
-import TopMiddle from "@/components/index/topNews/middle/TopMiddle";
-import TopLower from "@/components/index/topNews/TopLower";
+import ColumnAbsolute from "@/components/column/columnAbsolute/ColumnAbsolute";
+import NewsItem from "@/components/column/news/NewsItem";
 import Divider from "@/components/divider/Divider";
 import Video from "@/components/video/Video";
+import Calender from "@/components/calender/Calender";
 
 export default {
   data() {
@@ -179,10 +184,11 @@ export default {
     Marque,
     Aside,
     Top,
-    TopMiddle,
-    TopLower,
+    ColumnAbsolute,
+    NewsItem,
     Divider,
-    Video
+    Video,
+    Calender
   }
 };
 </script>

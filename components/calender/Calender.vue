@@ -40,6 +40,7 @@ export default {
       if (this.date < event.date || this.showNews === false) {
         return;
       }
+      console.log("h8");
       const monthNames = [
         "January",
         "February",
@@ -57,7 +58,7 @@ export default {
       let { year, month_parsed, day } = event;
       let month = monthNames[event.date.getMonth()];
       this.$router.push({
-        name: "news",
+        name: "category",
         query: {
           day: day,
           month: month,

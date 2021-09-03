@@ -26,7 +26,7 @@ export default {
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [
-        // { src: '@/plugins/VueCalender', ssr: false }
+        { src: '@/plugins/VueCalender', ssr: false }
     ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
