@@ -39,7 +39,7 @@
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-6 text-white h-7 "
+              class="w-6 text-white h-7"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -56,7 +56,7 @@
         <div class="flex items-center -mr-2 2md:hidden">
           <button
             type="button"
-            class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md bg-brand-700 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md  bg-brand-700 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             aria-controls="mobile-menu"
             aria-expanded="false"
             @click.prevent="mobile_menu = true"
@@ -95,7 +95,7 @@
           </button>
           <button
             type="button"
-            class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md bg-brand-700 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            class="inline-flex items-center justify-center p-2 text-gray-400 rounded-md  bg-brand-700 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             aria-controls="mobile-menu"
             aria-expanded="false"
             @click.prevent="mobile_menu = false"
@@ -120,7 +120,7 @@
       </div>
     </div>
     <div
-      class="absolute z-50 w-full transition ease-in-out bg-gray-300 duration-2000 bg-opacity-80 2md:hidden"
+      class="absolute z-50 w-full transition ease-in-out bg-gray-300  duration-2000 bg-opacity-80 2md:hidden"
       id="mobile-menu"
       :class="mobile_menu ? 'ml-0 ' : 'hide-left'"
     >
@@ -137,13 +137,23 @@ export default {
   data() {
     return {
       mobile_menu: false,
-      search: false
+      search: false,
     };
+  },
+  watch: {
+    mobile_menu() {
+      let click = document.querySelector("body");
+      if (this.mobile_menu) {
+        click.style.overflow = "hidden";
+      } else {
+        click.style.overflow = "";
+      }
+    },
   },
   components: {
     Search,
     NavigationOption,
-    MobileMenu
-  }
+    MobileMenu,
+  },
 };
 </script>
