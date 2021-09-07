@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+html,
 body {
     font-family: 'Hind Siliguri', sans-serif;
     background-color: #ededed;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -9,10 +11,10 @@ img {
     height: 100% !important;
 }
 
-.hide-left {
-    margin-left: -66rem;
+#catnews {
+    max-height: 965px;
 }
 
-.sub-cat-margin {
-    margin-top: 16px;
+#catnews::-webkit-scrollbar {
+    display: none;
 }

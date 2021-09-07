@@ -1,12 +1,12 @@
 <template>
   <button type="button" class="w-full pl-1 text-gray-70">
     <div>
-      <div class="relative mt-3 rounded-md shadow-sm">
+      <div class="relative rounded-md shadow-sm">
         <input
           type="text"
           name="account-number"
           id="account-number"
-          class="block w-full h-8 pl-2 pr-10 border border-gray-300 rounded-md sm:text-sm "
+          class="block w-full h-8 pl-2 pr-10 border border-gray-300 rounded-md sm:text-sm focus:outline-none"
           placeholder="Search ..."
         />
         <div

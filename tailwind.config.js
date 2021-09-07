@@ -1,4 +1,4 @@
-// tailwind.config.js
+const colors = require('tailwindcss/colors')
 module.exports = {
     purge: [],
     purge: [
@@ -11,7 +11,6 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
-
             colors: {
                 brand: {
                     600: '#339999',
@@ -19,7 +18,12 @@ module.exports = {
                 },
                 margin: {
                     '66': '-66rem'
-                }
+                },
+                cyan: colors.cyan,
+            },
+            transitionProperty: {
+                'height': 'height',
+                'spacing': 'margin, padding',
             }
         },
         screens: {
@@ -29,13 +33,15 @@ module.exports = {
             'lg': '1024px',
             'xl': '1280px',
             '2xl': '1536px',
-        }
+        },
+
     },
     variants: {
         extend: {
             borderColor: ['responsive', 'hover', 'focus', 'active'],
             visibility: ['group-hover'],
             margin: ['group-hover'],
+            translate: ['active', 'group-hover'],
         },
     },
     plugins: [],
