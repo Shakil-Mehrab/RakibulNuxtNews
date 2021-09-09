@@ -9,7 +9,7 @@
             :key="n"
           >
             <div class="text-sm text-gray-200">
-              <h3 class="text-base text-brand-700">Browse By Category</h3>
+              <h6 class="text-base text-brand-700">Browse By Category</h6>
               <ul>
                 <li><a href="">Latest News</a></li>
                 <li><a href="">192 new kakrail, Dhaka</a></li>

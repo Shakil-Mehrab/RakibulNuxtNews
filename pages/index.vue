@@ -95,15 +95,7 @@
               </div>
             </div>
           </div>
-          <div class="grid grid-cols-12 gap-6">
-            <div
-              class="col-span-12 shadow  md:col-span-4 2md:col-span-4 lg:col-span-3"
-              v-for="n in 8"
-              :key="n"
-            >
-              <Video />
-            </div>
-          </div>
+          <Video />
         </div>
       </div>
     </div>
@@ -177,7 +169,7 @@ import Calender from "@/components/calender/Calender";
 export default {
   data() {
     return {
-      active: true,
+      active: true
     };
   },
   components: {
@@ -188,7 +180,7 @@ export default {
     NewsItem,
     Divider,
     Video,
-    Calender,
-  },
+    Calender
+  }
 };
 </script>

@@ -1,20 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+html,
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+    background-color: #ededed;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+    height: 100% !important;
+}
+
+.title-white-lg {
+    @apply text-white text-xl text-center leading-tight transition duration-500 ease-in-out tracking-normal font-medium
+}
+
+.title-white-lg:hover {
+    @apply text-brand-700
+}
+
+.title-white-sm {
+    @apply text-white text-base text-center leading-tight transition duration-500 ease-in-out tracking-normal font-medium
+}
+
+.title-white-sm:hover {
+    @apply text-brand-700
+}
+
 .title {
-    @apply text-base text-brand-700 transition duration-500 ease-in-out tracking-normal
+    @apply text-sm text-brand-700 transition duration-500 ease-in-out tracking-normal font-semibold leading-tight
 }
 
 .title:hover {
     @apply text-brand-600
-}
-
-.title-white {
-    @apply text-white text-base text-center leading-tight transition duration-500 ease-in-out tracking-normal
-}
-
-.title-white:hover {
-    @apply text-brand-700
 }
 
 .detail {
@@ -23,4 +44,16 @@
 
 .detail-white {
     @apply text-sm text-white
+}
+
+@media (max-width: 640px) {
+    .itle-white-lg {
+        @apply text-lg leading-none
+    }
+    .itle-white-sm {
+        @apply leading-none
+    }
+    .itle {
+        @apply leading-none
+    }
 }

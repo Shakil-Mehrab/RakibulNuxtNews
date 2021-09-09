@@ -1,10 +1,10 @@
 <template>
   <div class="relative h-full">
     <div class="w-full">
-      <h3 class=" title sm:font-semibold md:text-2xl">
+      <h6 class="title">
         বিএনপির রাজনীতি মিথ্যা ও অসত্যের ওপর দাঁড়িয়ে আছে: তথ্যমন্ত্রী দাঁড়িয়ে
         আছে:
-      </h3>
+      </h6>
       <div class="flex justify-between mb-6">
         <p class="p-2 border-l-4 border-brand-700">Category</p>
         <p class="">Social</p>
