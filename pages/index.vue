@@ -153,6 +153,32 @@
         </div>
       </div>
     </div>
+    <!-- slider  -->
+    <div class="mx-auto my-6 max-w-7xl sm:px-6 lg:px-8">
+      <div class="px-4 py-2 sm:px-0">
+        <div class="lg:flex">
+          <!-- col 8 -->
+          <div class="w-full lg:w-8/12">
+            <Slider />
+          </div>
+          <!-- col 4  -->
+          <div class="w-full mt-5 lg:w-4/12 lg:mt-0 lg:pl-5">
+            <div>
+              <ul class="flex w-full">
+                <li
+                  class="flex justify-center w-full px-5 py-3 text-base font-bold text-white bg-pink-500 rounded-md"
+                >
+                  <a href="#">সর্বশেষ</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <Aside :asides="7" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -165,6 +191,7 @@ import NewsItem from "@/components/column/news/NewsItem";
 import Divider from "@/components/divider/Divider";
 import Video from "@/components/video/Video";
 import Calender from "@/components/calender/Calender";
+import Slider from "@/components/slider/Slider";
 
 export default {
   data() {
@@ -180,7 +207,8 @@ export default {
     NewsItem,
     Divider,
     Video,
-    Calender
+    Calender,
+    Slider
   }
 };
 </script>

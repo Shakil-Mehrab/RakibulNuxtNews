@@ -23,7 +23,7 @@ import AsideItem from "@/components/sidebar/AsideItem";
 export default {
   data() {
     return {
-      isLoading: true
+      isLoading: false
     };
   },
   components: {

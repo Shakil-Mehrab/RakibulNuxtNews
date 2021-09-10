@@ -58,9 +58,8 @@
         </div>
       </div>
     </div>
-
     <!-- video  -->
-    <div class="pb-6 mt-12 mb-6 bg-brand-600">
+    <div class="pb-6 my-6 mt-12 bg-brand-600">
       <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="px-4 py-2 sm:px-0">
           <div class="my-5">
@@ -78,15 +77,7 @@
               </div>
             </div>
           </div>
-          <div class="grid grid-cols-12 gap-6">
-            <div
-              class="col-span-12 shadow md:col-span-4 2md:col-span-4 lg:col-span-3"
-              v-for="n in 8"
-              :key="n"
-            >
-              <Video />
-            </div>
-          </div>
+          <Video />
         </div>
       </div>
     </div>
