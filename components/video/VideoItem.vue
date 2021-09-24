@@ -36,3 +36,14 @@
     </div>
   </a>
 </template>
+<script>
+export default {
+  props: {
+    detail: {
+      required: false,
+      type: Boolean,
+      default: false
+    }
+  }
+};
+</script>

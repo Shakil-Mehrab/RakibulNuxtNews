@@ -1,4 +1,8 @@
 export default {
+    ngrok: {
+        authtoken: '1yPP89r0xEmoGOu2shTLrjeIbJR_7MYGRdReVNKjzxbD7Rdb5',
+        region: 'ap'
+    },
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
         title: 'RakibulNuxtNews',
@@ -38,6 +42,8 @@ export default {
     buildModules: [
         // https://go.nuxtjs.dev/tailwindcss
         '@nuxtjs/tailwindcss',
+        '@nuxtjs/ngrok',
+
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
