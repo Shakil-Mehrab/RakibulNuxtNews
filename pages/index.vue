@@ -1,7 +1,7 @@
 <template>
   <main class="overflow-hidden">
     <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="px-4 py-2 sm:px-0">
+      <div class="px-2 py-2 sm:px-0">
         <div class="my-4">
           <Marque />
         </div>
@@ -27,7 +27,7 @@
           </div>
           <!-- col 4  -->
           <div class="w-full mt-5 lg:w-4/12 lg:mt-0 lg:pl-5">
-            <div>
+            <div class="mb-2">
               <ul class="flex w-full">
                 <li
                   class="flex justify-center w-full px-5 py-3 text-base font-bold "
@@ -61,7 +61,7 @@
     </div>
     <!-- national  -->
     <div class="mx-auto mt-12 max-w-7xl sm:px-6 lg:px-8">
-      <div class="px-4 py-2 sm:px-0">
+      <div class="px-2 py-2 sm:px-0">
         <div class="pb-2 pl-2 mb-1 border-l-4 border-brand-600">
           <Divider title="বাংলাদেশ" />
         </div>
@@ -79,7 +79,7 @@
     <!-- video  -->
     <div class="mt-12 bg-brand-600">
       <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="px-4 py-2 sm:px-0">
+        <div class="px-2 py-2 sm:px-0">
           <div class="my-5">
             <div class="relative">
               <div
@@ -101,7 +101,7 @@
     </div>
     <!-- international  -->
     <div class="mx-auto mt-12 max-w-7xl sm:px-6 lg:px-8">
-      <div class="px-4 py-2 sm:px-0">
+      <div class="px-2 py-2 sm:px-0">
         <div class="grid grid-cols-12 gap-6">
           <div
             class="col-span-12 shadow md:col-span-6 lg:col-span-4"
@@ -121,7 +121,7 @@
     </div>
     <!-- sports  -->
     <div class="mx-auto mt-12 max-w-7xl sm:px-6 lg:px-8">
-      <div class="px-4 py-2 sm:px-0">
+      <div class="px-2 py-2 sm:px-0">
         <div class="pb-2 pl-2 mb-1 border-l-4 border-brand-600">
           <Divider title="খেলাধুলা" />
         </div>
@@ -138,7 +138,7 @@
     </div>
     <!-- recreation  -->
     <div class="mx-auto mt-12 max-w-7xl sm:px-6 lg:px-8">
-      <div class="px-4 py-2 sm:px-0">
+      <div class="px-2 py-2 sm:px-0">
         <div class="pb-2 pl-2 mb-1 border-l-4 border-brand-600">
           <Divider title="বিনোদন" />
         </div>
@@ -155,7 +155,7 @@
     </div>
     <!-- slider  -->
     <div class="mx-auto my-6 max-w-7xl sm:px-6 lg:px-8">
-      <div class="px-4 py-2 sm:px-0">
+      <div class="px-2 py-2 sm:px-0">
         <div class="lg:flex">
           <!-- col 8 -->
           <div class="w-full lg:w-8/12">
@@ -163,7 +163,7 @@
           </div>
           <!-- col 4  -->
           <div class="w-full mt-5 lg:w-4/12 lg:mt-0 lg:pl-5">
-            <div>
+            <div class="mb-2">
               <ul class="flex w-full">
                 <li
                   class="flex justify-center w-full px-5 py-3 text-base font-bold text-white bg-pink-500 rounded-md"

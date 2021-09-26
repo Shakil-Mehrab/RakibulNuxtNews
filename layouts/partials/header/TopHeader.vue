@@ -45,7 +45,7 @@
           <div class="">
             <div
               class="inline-flex items-center ml-3 text-2xl font-medium text-brand-700"
-              v-for="n in 4"
+              v-for="n in 3"
               :key="n"
             >
               <a href=""><i class="fab fa-facebook-square"></i></a>

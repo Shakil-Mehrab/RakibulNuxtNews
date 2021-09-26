@@ -1,7 +1,8 @@
 export default {
     ngrok: {
-        authtoken: '1yPP89r0xEmoGOu2shTLrjeIbJR_7MYGRdReVNKjzxbD7Rdb5',
+        authtoken: '1yZsXiBHv7mBVypof2BGSGZlKzo_4eWP97q1Cr2hSUwmFDWdw',
         region: 'ap'
+
     },
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {

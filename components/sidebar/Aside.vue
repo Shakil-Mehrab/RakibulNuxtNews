@@ -2,7 +2,7 @@
   <div>
     <div v-if="!isLoading">
       <div
-        class="py-3 overflow-hidden border-b rounded-md first:py-3 "
+        class="py-1 overflow-hidden border-b rounded-md md:py-3"
         v-for="n in asides"
         :key="n"
       >

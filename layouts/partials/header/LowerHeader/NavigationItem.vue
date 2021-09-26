@@ -16,7 +16,7 @@
       </svg>
     </nuxt-link>
     <div
-      class="absolute left-0 z-50 invisible w-48 py-1 mt-8 transition duration-500 ease-in-out origin-top-right transform bg-white border rounded-b-md group-hover:-translate-y-3 group-hover:visible"
+      class="absolute left-0 invisible w-48 py-1 mt-8 transition duration-500 ease-in-out origin-top-right transform bg-white border rounded-b-md group-hover:-translate-y-3 group-hover:visible"
       role="menu"
       aria-orientation="vertical"
       aria-labelledby="user-menu-button"
