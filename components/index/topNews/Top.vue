@@ -3,7 +3,7 @@
     <nuxt-link :to="{ name: 'category' }" v-if="!isLoading">
       <div>
         <img
-          src="https://asset1.dbcnews.tv/storage/images/0db2f45a-2b9a-4464-96da-88cb9ea79a61.jpg"
+          src="https://i.picsum.photos/id/627/600/300.jpg?hmac=cX8Zw8924mzTcafwYeHpEDaXbhVcf2r7_oPm501NX-o"
           alt=""
         />
       </div>

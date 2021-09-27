@@ -1,7 +1,7 @@
 <template>
   <main>
     <div class="mx-auto my-6 max-w-7xl sm:px-6 lg:px-8">
-      <div class="px-4 py-2 sm:px-0">
+      <div class="px-2 py-2 sm:px-0">
         <div class="lg:flex">
           <!-- col 8 -->
           <div class="w-full lg:w-8/12">

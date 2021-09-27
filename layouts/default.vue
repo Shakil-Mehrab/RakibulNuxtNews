@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-white" @mousewheel="scrollHeight()">
+  <div class="min-h-screen bg-white">
     <Header />
     <Nuxt />
     <Footer />
@@ -18,17 +18,22 @@ export default {
     GoToTop
   },
   methods: {
-    scrollHeight() {
-      var y = window.pageYOffset;
-      console.log(y);
-      if (y >= 800) {
-        let top = document.getElementById("go-to-top");
-        top.style.opacity = 1;
-      } else {
-        let top = document.getElementById("go-to-top");
-        top.style.opacity = 0;
-      }
+    addScrollListener() {
+      let pxTrigger = 0;
+      const scrollHeight = 800;
+      document.addEventListener("scroll", () => {
+        const pxFromTop = window.scrollY || window.pageYOffset;
+        if (pxFromTop > scrollHeight) {
+          document.getElementById("go-to-top").style.opacity = 1;
+        } else {
+          document.getElementById("go-to-top").style.opacity = 0;
+        }
+        console.log(pxFromTop);
+      });
     }
+  },
+  mounted() {
+    this.addScrollListener();
   }
 };
 </script>

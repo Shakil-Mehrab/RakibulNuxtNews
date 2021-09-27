@@ -12,7 +12,7 @@
     </div>
     <div>
       <img
-        src="https://asset1.dbcnews.tv/storage/images/0db2f45a-2b9a-4464-96da-88cb9ea79a61.jpg"
+        src="https://i.picsum.photos/id/635/600/300.jpg?hmac=hfA0z6CrW8uYRWqDiEy16vvdqq2cBPn6HuAeIRFjcWw"
         alt=""
       />
     </div>

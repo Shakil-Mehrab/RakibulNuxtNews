@@ -17,7 +17,7 @@
                   width="100%"
                 /> -->
               <img
-                src="https://asset1.dbcnews.tv/storage/images/7ca62e04-49fa-4de5-87f5-9488e87e49bc.jpg"
+                src="https://i.picsum.photos/id/852/600/300.jpg?hmac=uxqwOyVgN9kSsvp9J2TjzUC_czkDKaI0uuaRPxZCjtQ"
                 alt=""
               />
 

@@ -3,7 +3,7 @@
     <a href="" v-if="!isLoading">
       <div class="overflow-hidden rounded-md">
         <img
-          src="https://asset1.dbcnews.tv/storage/images/7ca62e04-49fa-4de5-87f5-9488e87e49bc.jpg"
+          src="https://i.picsum.photos/id/966/600/300.jpg?hmac=jriKy-Z9MOgce5eWB6P6eU1E4kBAVY2HWp0_GEbpDZ8"
           alt=""
         />
       </div>

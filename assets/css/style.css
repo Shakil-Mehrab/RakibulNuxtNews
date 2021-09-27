@@ -5,3 +5,19 @@
 #catnews::-webkit-scrollbar {
     display: none;
 }
+
+.both-header {
+    z-index: 999999;
+}
+
+.nav--pinned {
+    top: 0;
+}
+
+.footer-fixed {
+    z-index: 9999;
+}
+
+.footer--pinned {
+    bottom: 0;
+}

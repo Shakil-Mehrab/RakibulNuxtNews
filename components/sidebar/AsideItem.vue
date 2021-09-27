@@ -8,7 +8,7 @@
         class="col-span-4 overflow-hidden rounded-md sm:col-span-2 lg:col-span-4"
       >
         <img
-          src="https://www.ntvbd.com/sites/default/files/styles/medium_2/public/images/2021/08/29/240837521_254.jpg?itok=wOSHXif6&timestamp=1630249368"
+          src="https://i.picsum.photos/id/933/600/300.jpg?hmac=TAwZkZdS6XUkpxT_NwalEJ4lJeaKnHAMJM0x0Msitdc"
           alt=""
         />
       </div>

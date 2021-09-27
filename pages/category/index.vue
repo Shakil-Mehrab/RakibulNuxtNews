@@ -1,7 +1,7 @@
 <template>
   <main class="overflow-hidden">
     <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-      <div class="px-4 py-2 sm:px-0">
+      <div class="px-2 py-2 sm:px-0">
         <div class="my-4">
           <Marque />
         </div>
@@ -61,7 +61,7 @@
     <!-- video  -->
     <div class="pb-6 my-6 mt-12 bg-brand-600">
       <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="px-4 py-2 sm:px-0">
+        <div class="px-2 py-2 sm:px-0">
           <div class="my-5">
             <div class="relative">
               <div

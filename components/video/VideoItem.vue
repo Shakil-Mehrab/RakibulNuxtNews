@@ -2,7 +2,7 @@
   <a href="">
     <div class="relative overflow-hidden rounded-md">
       <img
-        src="https://asset1.dbcnews.tv/storage/images/7ca62e04-49fa-4de5-87f5-9488e87e49bc.jpg"
+        src="https://i.picsum.photos/id/998/600/300.jpg?hmac=NfvpcsFMRq1u237S9kZk8G0vht-Dodi0ZoDk2-dK2tU"
         alt=""
       />
       <div

@@ -1,18 +1,17 @@
 <template>
-  <div class="pt-6 bg-brand-600">
+  <div class="pt-6 pb-16 bg-brand-600">
     <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
       <div class="px-4 py-2 sm:px-0">
         <div class="grid grid-cols-12 gap-2 sm:gap-6">
           <div class="col-span-12 sm:col-span-6 md:col-span-4 ">
-            <div class="text-sm text-gray-200">
+            <div class="mt-3 text-sm text-gray-200">
               <!-- <h6 class="text-base text-brand-700">Editor</h6> -->
               <ul class="space-y-2">
-                <li><a href="">রাকিবুল ইসলাম</a></li>
-                <li><a href="">প্রধান সম্পাদক</a></li>
+                <li><a href="">প্রধান সম্পাদক : রাকিবুল ইসলাম</a></li>
               </ul>
             </div>
           </div>
-          <div class="col-span-12 sm:col-span-6 md:col-span-4 ">
+          <div class="col-span-12 mt-3 sm:col-span-6 md:col-span-4">
             <div class="text-sm text-gray-200">
               <h6 class="text-base text-brand-700"></h6>
               <ul class="space-y-2">
@@ -36,7 +35,7 @@
           <div class="col-span-12 sm:col-span-6 md:col-span-4 ">
             <div class="space-y-2 text-sm text-gray-200">
               <!-- <h6 class="text-base text-brand-700">Follow Us</h6> -->
-              <ul class="flex mb-5 space-x-1">
+              <ul class="flex mt-3 mb-5 space-x-2">
                 <li
                   class="flex items-center justify-center w-8 h-8 bg-blue-900 rounded-md"
                 >
@@ -103,5 +102,17 @@
         </div>
       </div>
     </div>
+    <div>
+      <FooterPinnedAdd />
+    </div>
   </div>
 </template>
+<script>
+import FooterPinnedAdd from "@/layouts/partials/footer/FooterPinnedAdd";
+
+export default {
+  components: {
+    FooterPinnedAdd
+  }
+};
+</script>

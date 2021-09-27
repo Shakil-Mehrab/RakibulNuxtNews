@@ -1,9 +1,15 @@
 <template>
   <div
-    class="fixed w-full h-24 transition-all duration-200 ease-in-out transform bg-red-900 -top-28 z-100 both-header"
+    class="fixed w-full h-24 transition-all duration-200 ease-in-out transform -top-28 z-100 both-header"
     :class="{ 'nav--pinned': pinned }"
   >
-    <TopHeader />
+    <TopHeader
+      :class="
+        top_pinned
+          ? 'transition-all duration-200 ease-in-out transform'
+          : '-mt-12 sm:-mt-8 transition-all duration-200 ease-in-out transform'
+      "
+    />
     <LowerHeader />
   </div>
 </template>
@@ -16,7 +22,8 @@ export default {
     return {
       open: false,
       mobile_menu: false,
-      pinned: true
+      pinned: true,
+      top_pinned: true
     };
   },
   components: {
@@ -30,10 +37,12 @@ export default {
       document.addEventListener("scroll", () => {
         const pxFromTop = window.scrollY || window.pageYOffset;
         if (pxFromTop > menuHeight) {
+          this.top_pinned = false;
           this.pinned = pxFromTop < pxTrigger;
           pxTrigger = pxFromTop;
         } else {
           this.pinned = true;
+          this.top_pinned = true;
         }
         console.log(pxFromTop);
       });
@@ -44,11 +53,3 @@ export default {
   }
 };
 </script>
-<style scoped>
-.both-header {
-  z-index: 999999;
-}
-.nav--pinned {
-  top: 0;
-}
-</style>
